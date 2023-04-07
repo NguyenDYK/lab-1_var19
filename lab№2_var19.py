@@ -18,7 +18,7 @@ try:
             print("Конец.")
             break
         for j in buffer:
-            r=re.findall(r'\d+',j)
+            r=re.findall(r'\b\d+\b',j)
             a=''.join(r)
             if len(r)==1:
                 if len(j)==len(r[0]):
