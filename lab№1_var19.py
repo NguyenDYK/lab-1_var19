@@ -29,9 +29,8 @@ try:
                 for i in range(len(work_buffer)):
                     array=[]
                     for a in range(10):
-                        a=str(a)
-                        if work_buffer.count(a)>=2:
-                            a=int(a)                    
+                        a1=str(a)
+                        if work_buffer.count(a1)>=2:                    
                             array.append(numbers[a])            
                 if array==[] and int(work_buffer)>=k:
                     k=int(work_buffer)
